@@ -65,6 +65,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
+        <meta name="yandex-verification" content="efcfc0aa7be059a6" />
         {/* Слот для дополнительных пользовательских тегов: вставляйте сюда свои meta, link и другие теги */}
       </head>
       <body>{children}</body>
