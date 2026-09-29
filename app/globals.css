@@ -1,0 +1,189 @@
+/* Kush Casino landing — own hand-written CSS, no frameworks, no third-party js */
+
+:root {
+  color-scheme: dark;
+  --kz14-felt: #0d3a2d;
+  --kz14-felt-2: #12483a;
+  --kz14-gold: #d9a441;
+  --kz14-ivory: #f4efe4;
+  --kz14-mute: #b9cec3;
+}
+
+html {
+  background: var(--kz14-felt);
+}
+
+body {
+  margin: 0;
+  background: var(--kz14-felt);
+  color: var(--kz14-ivory);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+::selection {
+  background: var(--kz14-gold);
+  color: var(--kz14-felt);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--kz14-gold);
+  outline-offset: 2px;
+}
+
+/* shell: flex column + gap, so blocks can be reordered freely without breaking */
+.kz14-shell {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.kz14-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.kz14-badge {
+  margin: 0;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--kz14-gold);
+}
+
+.kz14-h1 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.65rem, 6vw, 2.75rem);
+  line-height: 1.18;
+  color: var(--kz14-ivory);
+  text-wrap: balance;
+}
+
+.kz14-lead {
+  margin: 0;
+  color: var(--kz14-mute);
+  font-size: clamp(1rem, 2.6vw, 1.125rem);
+  text-wrap: pretty;
+}
+
+.kz14-fig {
+  margin: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(217, 164, 65, 0.35);
+  background: var(--kz14-felt-2);
+}
+
+.kz14-art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.kz14-cap {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--kz14-mute);
+}
+
+.kz14-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--kz14-felt-2);
+  border: 1px solid rgba(244, 239, 228, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1rem;
+}
+
+.kz14-h2 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.25rem, 4.6vw, 1.75rem);
+  line-height: 1.3;
+  color: var(--kz14-gold);
+  text-wrap: balance;
+}
+
+.kz14-p {
+  margin: 0;
+  color: var(--kz14-ivory);
+  text-wrap: pretty;
+}
+
+.kz14-faq {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.kz14-q {
+  font-weight: 600;
+  color: var(--kz14-ivory);
+}
+
+.kz14-a {
+  margin: 0.125rem 0 0;
+  color: var(--kz14-mute);
+}
+
+.kz14-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid rgba(217, 164, 65, 0.35);
+  padding-top: 1.5rem;
+}
+
+.kz14-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.kz14-tag {
+  font-size: 0.8125rem;
+  color: var(--kz14-gold);
+  border: 1px solid rgba(217, 164, 65, 0.4);
+  border-radius: 999px;
+  padding: 0.25rem 0.625rem;
+  text-decoration: none;
+  background: rgba(217, 164, 65, 0.08);
+}
+
+.kz14-tag:hover {
+  background: rgba(217, 164, 65, 0.2);
+}
+
+.kz14-note {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--kz14-mute);
+}
+
+@media (min-width: 760px) {
+  .kz14-shell {
+    padding: 0 1.5rem 4rem;
+    gap: 3rem;
+  }
+
+  .kz14-hero {
+    padding-top: 3.5rem;
+    gap: 1.25rem;
+  }
+
+  .kz14-sect {
+    padding: 2rem;
+    gap: 1rem;
+  }
+}

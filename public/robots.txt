@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kush14casino.vercel.app/sitemap.xml
